@@ -20,7 +20,8 @@
             node-version: '22.16.0'
 
         - name: Install dependencies
-          run: npm install
+          run: npm install --save-dev eslint@latest @eslint/js@latest
+
 
         - name: Run ESLint
           run: npx eslint . 
